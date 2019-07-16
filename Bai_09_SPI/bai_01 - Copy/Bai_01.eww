@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\..\..\RTOS\Bai_01\Bai_01.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\bai_1.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>

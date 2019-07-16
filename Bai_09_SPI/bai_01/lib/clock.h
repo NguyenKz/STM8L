@@ -1,0 +1,28 @@
+#ifndef CLOCK
+#define CLOCK
+
+#include <stdint.h>
+#include "gpio.h"
+
+typedef struct{
+  BYTE_TYPE DIVR;
+  BYTE_TYPE CRTCR;
+  BYTE_TYPE ICKR;
+  BYTE_TYPE PCKENR1;
+  BYTE_TYPE PCKENR2;
+  BYTE_TYPE CCOR;
+  BYTE_TYPE ECKR;
+  BYTE_TYPE SCSR;
+  BYTE_TYPE SWR;
+  BYTE_TYPE SWCR;
+  BYTE_TYPE CSSR;
+  BYTE_TYPE CBEEPR;
+  BYTE_TYPE HSICALR;
+  BYTE_TYPE HSITRIMR;
+  BYTE_TYPE HSIUNLCKR;
+  BYTE_TYPE REGCSR;
+} CLK_Type;
+
+#define CLK ((volatile CLK_Type *)0x50C0)
+
+#endif

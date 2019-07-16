@@ -1,0 +1,9 @@
+Báo cáo:
+Sao khi làm bài tập này thì em có nhiều phần chưa rõ mong anh chi có thể chỉ lại cho em:
+1: Về intterupt thì em không có gì để hỏi, vì em chưa gặp vấn đề gì hết.
+2: Phần LCD:
++	Em config hết các thanh ghi rồi mà em không biết cách dùng như thế nào để hiển thị ra lcd.
++   Em có tham khảo của 1 bạn trong lớp thì em đã hiển thị được lcd và em cũng hiểu sơ sơ về cách hiển thị của lcd rồi nhưng không được tường tận, còn mơ hồ quá.
++   Em hiển thị được rồi nhưng mà nó cứ nảy lung tung lên hết mà em không biết sửa như thế nào hết.
+
+Em mong có một buổi nào đó để học về cái này.
