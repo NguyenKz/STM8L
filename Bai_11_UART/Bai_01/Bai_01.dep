@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>2</fileVersion>
-    <fileChecksum>1876026395</fileChecksum>
+    <fileChecksum>1690431146</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
@@ -17,9 +17,16 @@
             <file>$PROJ_DIR$\lib\clock.h</file>
             <file>$PROJ_DIR$\lib\SYSCFG.h</file>
             <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
             <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+            <file>$PROJ_DIR$\Debug\List\Bai_01.map</file>
+            <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
             <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\config\lnkstm8l152c6.icf</file>
             <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
             <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
@@ -27,13 +34,31 @@
             <file>$PROJ_DIR$\Debug\Obj\Bai_01.pbd</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
             <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\spi.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\lib\Itc.h</file>
         </outputs>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\Bai_01.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 21 7 0 18 16</file>
+                </tool>
+            </inputs>
+        </file>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 2</file>
+                    <file> 2 17</file>
                 </tool>
             </outputs>
         </file>
@@ -48,11 +73,19 @@
                     <name>BICOMP</name>
                     <file> 1</file>
                 </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 29</file>
+                </tool>
             </outputs>
             <inputs>
                 <tool>
+                    <name>ICCSTM8</name>
+                    <file> 3 4 24 25 19 20 28 23 22 27 9 8 10</file>
+                </tool>
+                <tool>
                     <name>BICOMP</name>
-                    <file> 10 18 14 16 9 17 13 4 8 15 21 3 20</file>
+                    <file> 10 9 24 19 22 23 25 4 8 28 3 20 27</file>
                 </tool>
             </inputs>
         </file>
@@ -67,18 +100,22 @@
                     <name>BICOMP</name>
                     <file> 11</file>
                 </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 30</file>
+                </tool>
             </outputs>
             <inputs>
                 <tool>
+                    <name>ICCSTM8</name>
+                    <file> 5 24 25 19 20 28 23 22 27 4 9 31 8 13 14 12</file>
+                </tool>
+                <tool>
                     <name>BICOMP</name>
-                    <file> 18 21 9 17 4 13 14 15 16 5 20</file>
+                    <file> 28 19 8 25 24 9 22 23 12 4 31 13 20 27 14 5</file>
                 </tool>
             </inputs>
         </file>
-        <forcedrebuild>
-            <name>[MULTI_TOOL]</name>
-            <tool>ILINK</tool>
-        </forcedrebuild>
     </configuration>
     <configuration>
         <name>Release</name>

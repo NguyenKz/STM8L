@@ -32,7 +32,7 @@ typedef struct{
     uint8_t PIEN    : 1;
 //  0: Even parity
 //  1: Odd parity
-    uint8_t PS:      :1;    
+    uint8_t PS      :1;    
 //  0: Parity control disabled
 //  1: Parity control enabled
     uint8_t PCEN    : 1;
@@ -56,7 +56,7 @@ typedef struct{
     uint8_t SBK    : 1;
 //0: Receiver in active mode
 //1: Receiver in mute mode
-    uint8_t RWU:      :1;    
+    uint8_t RWU      :1;    
 //0: Receiver is disabled
 //1: Receiver is enabled and begins searching for a start bit
     uint8_t REN    : 1;
@@ -82,7 +82,7 @@ typedef struct{
     uint8_t LBCL    : 1;
 //0: The first clock transition is the first data capture edge
 //1: The second clock transition is the first data capture edge
-    uint8_t CPHA:      :1;    
+    uint8_t CPHA      :1;    
 //0: USART_CK to 0 when idle
 //1: USART_CK to 1 when idle.
     uint8_t CPOL    : 1;
@@ -116,7 +116,7 @@ typedef struct{
     uint8_t EIE    : 1;
 //0: IrDA disabled
 //1: IrDA enabled
-    uint8_t IREN:      :1;    
+    uint8_t IREN      :1;    
 //0: Normal mode
 //1: Low power mode
     uint8_t IRLP    : 1;
@@ -150,4 +150,4 @@ typedef struct{
   uint8_t USART1_PSCR;
 }UART_TYPE;
 
-#define (( volatile UART_TYPE *)0x5230)
+#define UART1 (( volatile UART_TYPE *)0x5230)

@@ -2109,6 +2109,9 @@
             <name>$PROJ_DIR$\lib\gpio.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\lib\Itc.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\lib\spi.c</name>
         </file>
         <file>

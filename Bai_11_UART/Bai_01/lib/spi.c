@@ -11,7 +11,7 @@ void sendString(const char *data){
   sendChar(0);
 }
 void InitSPISlave(void){
-  CLK->PCKENR1.BIT4=1;//enabel clock for spi
+  CLK->PCKENR1.PCKEN14=1;//enabel clock for spi
   
    //MOSI
   PB->DDR.BIT6=0;//output
@@ -40,7 +40,7 @@ void InitSPISlave(void){
 
 void InitSPIMaster(void){
 
-  CLK->PCKENR1.BIT4=1;//enabel clock for spi
+  CLK->PCKENR1.PCKEN14=1;//enabel clock for spi
    //MOSI
   PB->DDR.BIT6=1;//output
   PB->CR1.BIT6=1;//push-pull
