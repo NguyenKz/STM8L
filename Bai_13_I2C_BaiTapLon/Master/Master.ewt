@@ -2100,19 +2100,22 @@
     <group>
         <name>lib</name>
         <file>
-            <name>$PROJ_DIR$\lib\clock.h</name>
+            <name>$PROJ_DIR$\lib\CLOCK.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\lib\exinterrupt.h</name>
+            <name>$PROJ_DIR$\lib\EXT1.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\lib\gpio.h</name>
+            <name>$PROJ_DIR$\lib\GPIO.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\lib\SYSCFG.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\lib\uart.h</name>
+            <name>$PROJ_DIR$\lib\UART.h</name>
         </file>
     </group>
+    <file>
+        <name>$PROJ_DIR$\main.c</name>
+    </file>
 </project>

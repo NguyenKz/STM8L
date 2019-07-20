@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>2</fileVersion>
-    <fileChecksum>2760321500</fileChecksum>
+    <fileChecksum>2032583134</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
             <file>$PROJ_DIR$\main.c</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
             <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\config\lnkstm8l152c6.icf</file>
             <file>$PROJ_DIR$\lib\SYSCFG.h</file>
-            <file>$PROJ_DIR$\lib\clock.h</file>
+            <file>$PROJ_DIR$\lib\CLOCK.h</file>
             <file>$PROJ_DIR$\lib\Lcd.c</file>
             <file>$PROJ_DIR$\lib\timer.h</file>
             <file>$PROJ_DIR$\lib\spi.h</file>
             <file>$PROJ_DIR$\lib\Itc.h</file>
             <file>$PROJ_DIR$\lib\exinterrupt.h</file>
-            <file>$PROJ_DIR$\lib\gpio.h</file>
-            <file>$PROJ_DIR$\lib\uart.h</file>
+            <file>$PROJ_DIR$\lib\GPIO.h</file>
+            <file>$PROJ_DIR$\lib\UART.h</file>
             <file>$PROJ_DIR$\lib\Lcd.h</file>
             <file>$PROJ_DIR$\lib\spi.c</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
@@ -33,7 +35,7 @@
             <file>$PROJ_DIR$\Debug\Obj\spi.pbi</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
             <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\config\lnkstm8.icf</file>
+            <file>$PROJ_DIR$\lib\EXT1.h</file>
             <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
             <file>$PROJ_DIR$\Debug\List\Master.map</file>
             <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
@@ -49,72 +51,59 @@
                     <name>BICOMP</name>
                     <file> 2</file>
                 </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 3</file>
+                </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCSTM8</name>
+                    <file> 6 22 26 29 24 23 28 18 16 12</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 29 24 12 22 26 18 16 6 23 28</file>
+                </tool>
+            </inputs>
         </file>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 17 30</file>
+                    <file> 19 32</file>
                 </tool>
             </outputs>
         </file>
         <file>
             <name>$PROJ_DIR$\lib\Lcd.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 18</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 15</file>
-                </tool>
-            </outputs>
             <inputs>
                 <tool>
                     <name>ICCSTM8</name>
-                    <file> 12 20 24 27 22 21 26 16 14</file>
+                    <file> 14 22 26 29 24 23 28 18 16</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 20 27 22 24 16 14 12 21 26</file>
+                    <file> 22 29 24 26 18 16 14 23 28</file>
                 </tool>
             </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\lib\spi.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCSTM8</name>
-                    <file> 19</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 25</file>
-                </tool>
-            </outputs>
         </file>
         <file>
             <name>$PROJ_DIR$\Debug\Exe\Master.out</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 30</file>
+                    <file> 32</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 28 18 1 19 31 29</file>
+                    <file> 4 1 33 31</file>
                 </tool>
             </inputs>
         </file>
-        <forcedrebuild>
-            <name>[MULTI_TOOL]</name>
-            <tool>ILINK</tool>
-        </forcedrebuild>
     </configuration>
     <configuration>
         <name>Release</name>

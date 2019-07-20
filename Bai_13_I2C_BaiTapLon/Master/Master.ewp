@@ -16,7 +16,7 @@
                 <debug>1</debug>
                 <option>
                     <name>GenDeviceSelectMenu</name>
-                    <state>UnspecifiedSTM8	STM8 - Unspecified</state>
+                    <state>STM8L152C6	STM8L152C6</state>
                 </option>
                 <option>
                     <name>GenCodeModel</name>
@@ -56,7 +56,7 @@
                 </option>
                 <option>
                     <name>GenRTDescription</name>
-                    <state></state>
+                    <state>Use the normal configuration of the C/EC++ runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
                 </option>
                 <option>
                     <name>GenRTConfigPath</name>
@@ -69,7 +69,7 @@
                 </option>
                 <option>
                     <name>GenLibInFormatterDescription</name>
-                    <state></state>
+                    <state>No specifier n, no float, no scan set, no assignment suppressing.</state>
                 </option>
                 <option>
                     <name>GenLibOutFormatter</name>
@@ -78,7 +78,7 @@
                 </option>
                 <option>
                     <name>GenLibOutFormatterDescription</name>
-                    <state></state>
+                    <state>No specifier a or A, no specifier n, no float.</state>
                 </option>
                 <option>
                     <name>GenStackSize</name>
@@ -117,7 +117,7 @@
                 </option>
                 <option>
                     <name>GenMathFunctionDescription</name>
-                    <state></state>
+                    <state>Default variants of cos, sin, tan, log, log10, pow, and exp.</state>
                 </option>
             </data>
         </settings>
@@ -1606,19 +1606,22 @@
     <group>
         <name>lib</name>
         <file>
-            <name>$PROJ_DIR$\lib\clock.h</name>
+            <name>$PROJ_DIR$\lib\CLOCK.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\lib\exinterrupt.h</name>
+            <name>$PROJ_DIR$\lib\EXT1.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\lib\gpio.h</name>
+            <name>$PROJ_DIR$\lib\GPIO.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\lib\SYSCFG.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\lib\uart.h</name>
+            <name>$PROJ_DIR$\lib\UART.h</name>
         </file>
     </group>
+    <file>
+        <name>$PROJ_DIR$\main.c</name>
+    </file>
 </project>
