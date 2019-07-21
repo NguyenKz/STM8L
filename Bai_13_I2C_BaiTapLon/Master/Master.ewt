@@ -2109,6 +2109,12 @@
             <name>$PROJ_DIR$\lib\GPIO.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\lib\I2C.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\I2C.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\lib\SYSCFG.h</name>
         </file>
         <file>
