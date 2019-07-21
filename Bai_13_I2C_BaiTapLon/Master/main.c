@@ -1,7 +1,7 @@
 #include "lib/CLOCK.h"
 #include "lib/I2C.h"
 #include "lib/GPIO.h"
-
+#include <stdio.h>
 
 #define Slave_Adrress           0x50
 
@@ -13,22 +13,28 @@ void Delay(){
 }
 int main(){
   InitClock();
-  InitI2C_Master();
+  //InitI2C_Master();
+  InitI2C_Slave();
   InitGpio();
   asm("rim\n");
   
   while(1){
-    I2C1_Start();
-    I2C1_Select_Slave(Slave_Adrress,1);
-    I2C1_Write('A');
-    I2C1_Stop();
-    Delay();
-  
+//    I2C1_Start();
+//    I2C1_Select_Slave(Slave_Adrress,1);
+//    I2C1_Write('A');
+//    I2C1_Stop();
+//    Delay();
+    while (!I2C->I2C1_SR1.I2C_RXNE);
+    printf("ahah");
   }
   
   return 0;
 }
-
+#pragma vector =31   // i2c
+__interrupt void Chek(){
+  GPIO_PC->ODR.GPIO_PORT7^=1;
+  printf("%c",I2C->I2C1_DR.I2C_DR);
+}
 
 
 void InitGpio(){
@@ -38,7 +44,7 @@ void InitGpio(){
   GPIO_PC->CR2.GPIO_PORT0=1;            //
 
   //SCL
-  GPIO_PC->DDR.GPIO_PORT1=1;            //OUITPUT            
+  GPIO_PC->DDR.GPIO_PORT1=0;            //OUITPUT            
   GPIO_PC->CR1.GPIO_PORT1=1;            //PUSH-PULL
   GPIO_PC->CR2.GPIO_PORT1=1;            //
   
