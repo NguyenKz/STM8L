@@ -1,0 +1,7 @@
+#include "CLOCK.h"
+#include "External.h"
+#include "GPIO.h"
+//#include "LCD.h"
+#include "Itc.h"
+//#include "Usart.h"
+#include "SPI.h"
